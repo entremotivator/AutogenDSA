@@ -1,3 +1,7 @@
+import os
+os.system("pip install pyautogen")
+os.system("pip install streamlit")
+
 import autogen
 import streamlit_app
 
