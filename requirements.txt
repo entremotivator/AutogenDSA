@@ -1,2 +1,6 @@
 pyautogen
 streamlit
+scikit-learn
+xgboost
+catboost
+
