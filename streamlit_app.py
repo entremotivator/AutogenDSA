@@ -1,7 +1,4 @@
-
 import os
-os.system("pip install pyautogen")
-os.system("pip install streamlit")
 import streamlit as st
 import pandas as pd
 import subprocess
