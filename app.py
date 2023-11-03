@@ -1,9 +1,11 @@
 import autogen
+import streamlit_app
 
+key1 = streamlit_app.openaikey
 config_list = [
     {
         'model': 'gpt-4',
-        'api_key': "Your_api_Key"
+        'api_key': key1
     }
 ]
 
