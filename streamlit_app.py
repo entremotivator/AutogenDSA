@@ -9,6 +9,7 @@ def main():
     st.title("Data Science Agent")
     # Sidebar
     st.sidebar.header("Configuration")
+    openaikey = st.sidebar.text_input("Provide OpenAI Key", "yourkey")
     target_variable = st.sidebar.text_input("Target Variable", "target")
     eval_metrics = ["MAE", "MSE", "RMSE", "R-squared", "Accuracy", "F1 Score"]
     selected_metric = st.sidebar.selectbox("Select Evaluation Metric", eval_metrics)
@@ -79,7 +80,7 @@ def main():
         download_button = st.download_button(
             label="Download Code",
             data=open("hackathon/code.py", "rb").read(),
-            key="download_submission_file",
+            key="download_code",
             file_name="code.py",
         )    
 
